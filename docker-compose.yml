@@ -8,8 +8,8 @@ services:
       - "27017:27017"
   comments_ms:
     build: .
-    command: bash -c "rm -f tmp/pids/server.pid || true && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    command: bash -c "rm -f tmp/pids/server.pid || true && bundle exec rails s -p 3303 -b '0.0.0.0'"
     ports:
-      - "3000:3000"
+      - "3303:3303"
     links:
       - comments_bd
