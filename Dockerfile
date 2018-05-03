@@ -10,3 +10,5 @@ ADD Gemfile.lock /comments_ms/Gemfile.lock
 
 RUN bundle install
 ADD . /comments_ms
+
+EXPOSE 3303
