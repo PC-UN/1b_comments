@@ -3,7 +3,9 @@ class CommentsController < ApplicationController
 
   # GET /comments
   def index
-    @comments = Comment.all
+    selector = RansackMongo::Query.parse(params[:q])
+	
+    @comments = Comment.where(selector)
 
     render json: @comments
   end

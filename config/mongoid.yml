@@ -3,8 +3,7 @@ production:
     default:
       database: comments_bd_development
       hosts:
-        - 192.168.99.101:27017
-        - <%= ENV['DATABASE_URL'] %>
+        - 35.196.104.239:4303
       options:
         max_pool_size: 1
   options:
@@ -21,7 +20,7 @@ development:
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - 192.168.99.101:27017
+        - 35.196.104.239:4303
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
@@ -162,7 +161,7 @@ test:
     default:
       database: comments_ms_test
       hosts:
-        - 192.168.99.101:27017
+        - 35.196.104.239:4303
       options:
         read:
           mode: :primary
