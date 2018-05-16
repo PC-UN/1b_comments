@@ -3,7 +3,7 @@ production:
     default:
       database: comments_bd_development
       hosts:
-        - comments-db:4303
+        - comments-db
       options:
         max_pool_size: 1
   options:
@@ -20,7 +20,7 @@ development:
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - comments-db:4303
+        - comments-db
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
@@ -161,7 +161,7 @@ test:
     default:
       database: comments_ms_test
       hosts:
-        - comments-db:4303
+        - comments-db
       options:
         read:
           mode: :primary
